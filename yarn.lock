@@ -18,7 +18,7 @@ __metadata:
   resolution: "@newline-ds/react@workspace:packages/react"
   dependencies:
     "@newline-ds/foundation": "workspace:^"
-    typescript: ^4.9.4
+    typescript: 4.7.2
   languageName: unknown
   linkType: soft
 
@@ -36,7 +36,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "design-system-ts@workspace:."
   dependencies:
-    typescript: 4.7.2
+    typescript: ^4.9.4
   languageName: unknown
   linkType: soft
 
