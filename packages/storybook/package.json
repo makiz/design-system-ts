@@ -5,5 +5,8 @@
   "dependencies": {
     "@newline-ds/foundation": "workspace:^",
     "@newline-ds/react": "workspace:^"
+  },
+  "devDependencies": {
+    "typescript": "^4.9.4"
   }
 }

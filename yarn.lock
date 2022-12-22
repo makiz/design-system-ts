@@ -3,10 +3,13 @@
 
 __metadata:
   version: 6
+  cacheKey: 8
 
 "@newline-ds/foundation@workspace:^, @newline-ds/foundation@workspace:packages/foundation":
   version: 0.0.0-use.local
   resolution: "@newline-ds/foundation@workspace:packages/foundation"
+  dependencies:
+    typescript: ^4.9.4
   languageName: unknown
   linkType: soft
 
@@ -15,6 +18,7 @@ __metadata:
   resolution: "@newline-ds/react@workspace:packages/react"
   dependencies:
     "@newline-ds/foundation": "workspace:^"
+    typescript: ^4.9.4
   languageName: unknown
   linkType: soft
 
@@ -24,11 +28,54 @@ __metadata:
   dependencies:
     "@newline-ds/foundation": "workspace:^"
     "@newline-ds/react": "workspace:^"
+    typescript: ^4.9.4
   languageName: unknown
   linkType: soft
 
 "design-system-ts@workspace:.":
   version: 0.0.0-use.local
   resolution: "design-system-ts@workspace:."
+  dependencies:
+    typescript: 4.7.2
   languageName: unknown
   linkType: soft
+
+"typescript@npm:4.7.2":
+  version: 4.7.2
+  resolution: "typescript@npm:4.7.2"
+  bin:
+    tsc: bin/tsc
+    tsserver: bin/tsserver
+  checksum: 5163585e6b56410f77d5483b698d9489bbee8902c99029eb70cf6d21525a186530ce19a00951af84eefd4a131cc51d0959f5118e25e70ab61f45ac4057dbd1ef
+  languageName: node
+  linkType: hard
+
+"typescript@npm:^4.9.4":
+  version: 4.9.4
+  resolution: "typescript@npm:4.9.4"
+  bin:
+    tsc: bin/tsc
+    tsserver: bin/tsserver
+  checksum: e782fb9e0031cb258a80000f6c13530288c6d63f1177ed43f770533fdc15740d271554cdae86701c1dd2c83b082cea808b07e97fd68b38a172a83dbf9e0d0ef9
+  languageName: node
+  linkType: hard
+
+"typescript@patch:typescript@4.7.2#~builtin<compat/typescript>":
+  version: 4.7.2
+  resolution: "typescript@patch:typescript@npm%3A4.7.2#~builtin<compat/typescript>::version=4.7.2&hash=65a307"
+  bin:
+    tsc: bin/tsc
+    tsserver: bin/tsserver
+  checksum: 7e2b9a9f4a70fb7616f1b0d986977f8e34a74f046202fa7f24fdee79589598277810fa216b3776c20c0683a9235872c73be34fdb93f67f98c1efaca40999422f
+  languageName: node
+  linkType: hard
+
+"typescript@patch:typescript@^4.9.4#~builtin<compat/typescript>":
+  version: 4.9.4
+  resolution: "typescript@patch:typescript@npm%3A4.9.4#~builtin<compat/typescript>::version=4.9.4&hash=ad5954"
+  bin:
+    tsc: bin/tsc
+    tsserver: bin/tsserver
+  checksum: 1caaea6cb7f813e64345190fddc4e6c924d0b698ab81189b503763c4a18f7f5501c69362979d36e19c042d89d936443e768a78b0675690b35eb663d19e0eae71
+  languageName: node
+  linkType: hard
