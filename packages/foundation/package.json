@@ -1,8 +1,11 @@
 {
   "name": "@newline-ds/foundation",
   "packageManager": "yarn@3.3.1",
+  "main": "./lib/index.js",
+  "types": "./lib/index.d.ts",
   "scripts": {
-    "build-tokens": "style-dictionary build --config sd.config.js"
+    "build-tokens": "style-dictionary build --config sd.config.js",
+    "build": "yarn build-tokens && tsc"
   },
   "devDependencies": {
     "style-dictionary": "^3.7.1",
