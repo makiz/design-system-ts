@@ -5,7 +5,7 @@ export interface ButtonProps extends React.ComponentProps<'button'> {
   loading?: boolean;
 }
 
-const Button = forwardRef<HTMLButtonElement, ButtonProps>(
+export const Button = forwardRef<HTMLButtonElement, ButtonProps>(
   ({ disabled, loading, ...rest }, ref) => {
     return <button ref={ref} {...rest} disabled={disabled || loading} />;
   }

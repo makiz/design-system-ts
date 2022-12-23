@@ -6,7 +6,7 @@ export interface IconButtonProps extends React.ComponentProps<'button'> {
   'aria-label': string;
 }
 
-const IconButton = forwardRef<HTMLButtonElement, IconButtonProps>(
+export const IconButton = forwardRef<HTMLButtonElement, IconButtonProps>(
   ({ disabled, loading, ...rest }, ref) => {
     return (
       <button ref={ref} {...rest} disabled={disabled || loading}>
