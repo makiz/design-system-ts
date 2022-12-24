@@ -1,5 +1,6 @@
 {
   "name": "@newline-ds/react",
+  "version": "0.0.0",
   "packageManager": "yarn@3.3.1",
   "dependencies": {
     "@newline-ds/foundation": "workspace:^",
