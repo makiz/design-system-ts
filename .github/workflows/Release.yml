@@ -1,7 +1,5 @@
 name: 'Release Workflow'
-on:
-  # No auto run
-  workflow_dispatch:
+on: workflow_dispatch
 
 permissions:
   contents: write # for checkout and tag
